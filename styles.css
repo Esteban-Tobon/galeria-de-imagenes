@@ -30,3 +30,16 @@
     transition: all 0.3s ease; /* Define una transición suave para todos los cambios de propiedades, durando 0.3 segundos */
 }
 
+
+/*media queries para ajustar el tamaño de las imágenes*/
+@media (max-width: 768px) {
+    .galeria img {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        width: 95%; 
+    }
+}
