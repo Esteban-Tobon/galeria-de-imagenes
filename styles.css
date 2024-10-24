@@ -1,0 +1,32 @@
+ body{ 
+    background-color: azure;
+ }
+
+ /* Estilos para el contenedor de la galería de imágenes */
+.galeria {
+    display: flex; /* activa el modelo de caja flexible para organizar los elementos hijos en una fila */
+    flex-wrap: wrap; /* permite que los elementos se envuelvan a la siguiente línea si no hay espacio en una sola fila */
+    justify-content: center; /* centra los elementos hijos horizontalmente dentro del contenedor */
+    gap: 10px; /* Añade un espacio de 10 píxeles entre los elementos de la galería */
+    max-width: 800px; /*  ancho  de 800 píxeles para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente dentro de su padre */
+}
+
+
+
+/* Estilos para las imágenes dentro de elementos con la clase "galeria" */
+.galeria img {
+    width: 23%; /* Establece el ancho de la imagen al 23% del contenedor padre, permitiendo varias imágenes en una fila */
+    height: auto; /* Mantiene la proporción original de la imagen, ajustando la altura automáticamente */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área asignada, recortando si es necesario para mantener la relación de aspecto */
+}
+
+
+
+/* Estilos para las imágenes dentro de elementos con la clase "galeria" */
+.galeria img {
+    border-radius: 5px; /* Aplica un borde redondeado de 5 píxeles a las esquinas de la imagen */
+    box-shadow: 0px 2px 5px rgba(36, 34, 163, 0.377); /* Añade una sombra debajo de la imagen, proporcionando profundidad */
+    transition: all 0.3s ease; /* Define una transición suave para todos los cambios de propiedades, durando 0.3 segundos */
+}
+
